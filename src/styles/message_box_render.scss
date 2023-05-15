@@ -1,0 +1,20 @@
+.message-box-wrapper {
+  .message-title {
+    @apply text-18px font-medium leading-24px text-[var(--xx-text-color-primary)];
+    .message-icon-style{
+      @apply text-19px mr-11px;
+    }
+    .warning {
+      color: var(--el-color-warning);
+    }
+    .success {
+      color: var(--el-color-success);
+    }
+    .error {
+      color: var(--el-color-danger);
+    }
+  }
+  .message-content{
+    @apply  mt-12px ml-36px min-h-50px text-14px font-normal leading-20px text-[var(--xx-text-color-primary)];
+  }
+}

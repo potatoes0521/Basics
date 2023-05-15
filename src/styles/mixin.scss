@@ -1,0 +1,33 @@
+@mixin scrollBar($backgroundColor: #e9eaec) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $backgroundColor;
+    border-radius: 3px;
+  }
+}
+
+@mixin selfScrollBar($backgroundColor: #e9eaec) {
+  &::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $backgroundColor;
+    border-radius: 3px;
+  }
+}

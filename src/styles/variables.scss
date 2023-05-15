@@ -1,0 +1,18 @@
+// 全局css初始样式
+:root {
+  // 导航栏高度
+  // --navbar-height: 54px;
+}
+
+[data-theme='dark'] {
+}
+
+// size
+// $navbarHeight: var(--navbar-height);
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+// 可导入JS使用
+:export {
+  // navbarHeight: $navbarHeight;
+}

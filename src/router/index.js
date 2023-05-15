@@ -1,23 +1,22 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+/*
+ * @LastEditors: liu yang
+ * @Description: ...
+ * @Date: 2022-02-21 11:48:28
+ * @LastEditTime: 2023-05-15 16:48:54
+ * @Author: isboyjc
+ */
+import { createRouter, createWebHistory } from 'vue-router';
+import { getConfig } from '@/config/index';
+// import { StaticRouterMap } from './modules/static';
+
+// export const routes = [...StaticRouterMap];
+export const routes = [];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    }
-  ]
-})
+  history: createWebHistory(getConfig('base')),
+  routes,
+  strict: false,
+  scrollBehavior: () => ({ left: 0, top: 0 })
+});
 
-export default router
+export default router;

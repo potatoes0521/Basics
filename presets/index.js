@@ -5,21 +5,21 @@
  * @LastEditTime: 2023-05-15 16:41:11
  * @Author: liu yang
  */
-import vue from '@vitejs/plugin-vue'
-import vueJsx from '@vitejs/plugin-vue-jsx'
+import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 
 // windicss
-import WindiCSS from 'vite-plugin-windicss'
+import WindiCSS from 'vite-plugin-windicss';
 // 可视化打包分析
-import { visualizer } from "rollup-plugin-visualizer";
+import { visualizer } from 'rollup-plugin-visualizer';
 // 从 package.json 中扩展 Vite 配置
-import PkgConfig from 'vite-plugin-package-config'
+import PkgConfig from 'vite-plugin-package-config';
 // mockjs插件
 import { viteMockServe } from 'vite-plugin-mock';
 // 组件自动引入
-import AutoImport from 'unplugin-auto-import/vite'
+import AutoImport from 'unplugin-auto-import/vite';
 // 组件自动引入
-import Components from 'unplugin-vue-components/vite'
+import Components from 'unplugin-vue-components/vite';
 // ElementPlus、VueUse 组件自动引入解析起
 import { ElementPlusResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers';
 // icon 解析
@@ -30,7 +30,7 @@ import IconsResolver from 'unplugin-icons/resolver';
 import { FileSystemIconLoader } from 'unplugin-icons/loaders';
 
 export default ({ mode }) => {
-  console.log("🚀 > file: index.js:19 > command:", mode)
+  console.log('🚀 > file: index.js:19 > command:', mode);
   return [
     vue(),
     vueJsx(),
@@ -76,16 +76,16 @@ export default ({ mode }) => {
         }),
         VueUseComponentsResolver(),
         ElementPlusResolver(),
-        VueUseComponentsResolver(),
+        VueUseComponentsResolver()
       ]
     }),
     Icons({
       compiler: 'vue3',
       customCollections: {
         // home图标集，给svg文件设置fill="currentColor"属性，使图标的颜色具有适应性
-        home: FileSystemIconLoader('src/assets/svg/home', (svg) => svg.replace(/^<svg /, '<svg fill="currentColor" ')),
+        home: FileSystemIconLoader('src/assets/svg/home', (svg) => svg.replace(/^<svg /, '<svg fill="currentColor" '))
       },
       autoInstall: true
-    }),
-  ]
-}
+    })
+  ];
+};
