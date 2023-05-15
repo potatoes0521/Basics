@@ -2,7 +2,7 @@
  * @LastEditors: liu yang
  * @Description: Vite 插件配置
  * @Date: 2023-05-15 14:43:00
- * @LastEditTime: 2023-05-15 15:17:52
+ * @LastEditTime: 2023-05-15 16:41:11
  * @Author: liu yang
  */
 import vue from '@vitejs/plugin-vue'
@@ -29,8 +29,8 @@ import IconsResolver from 'unplugin-icons/resolver';
 // icon 加载 loader
 import { FileSystemIconLoader } from 'unplugin-icons/loaders';
 
-export default ({ command }, viteEnv) => {
-  console.log("🚀 > file: index.js:19 > command:", command)
+export default ({ mode }) => {
+  console.log("🚀 > file: index.js:19 > command:", mode)
   return [
     vue(),
     vueJsx(),
@@ -40,7 +40,7 @@ export default ({ command }, viteEnv) => {
     viteMockServe({
       supportTs: false,
       mockPath: 'mock',
-      localEnabled: command === 'serve'
+      localEnabled: mode === 'dev'
     }),
     AutoImport({
       include: [
