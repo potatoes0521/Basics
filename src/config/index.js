@@ -2,8 +2,8 @@
  * @LastEditors: liu yang
  * @Description: 全局config配置文件
  * @Date: 2022-03-03 14:51:27
- * @LastEditTime: 2023-05-15 16:49:46
- * @Author: isboyjc
+ * @LastEditTime: 2023-05-16 09:43:19
+ * @Author: liu yang
  */
 // import { loadEnv } from 'vite'
 
@@ -44,7 +44,7 @@ const configSource = {
 };
 
 /**
- * @Author isboyjc
+ * @Author liu yang
  * @Date 2022-03-03 16:44:49
  * @description 设置全局配置
  * @param {Object} cfg 配置项
@@ -56,7 +56,7 @@ const setConfig = (cfg) => {
 };
 
 /**
- * @Author isboyjc
+ * @Author liu yang
  * @Date 2022-03-03 16:45:11
  * @description 重置全局配置
  * @param {*}
@@ -69,7 +69,7 @@ const resetConfig = () => {
 resetConfig();
 
 /**
- * @Author isboyjc
+ * @Author liu yang
  * @Date 2022-03-03 16:45:23
  * @description 获取全局配置
  * @param {String} key 配置项，支持 'a.b.c' 的方式获取

@@ -8,6 +8,7 @@ specifiers:
   '@vueuse/core': ^10.1.2
   '@windicss/plugin-scrollbar': ^1.2.3
   cross-env: ^7.0.3
+  crypto-js: ^4.1.1
   element-plus: ^2.3.4
   eslint: ^8.39.0
   eslint-config-airbnb-base: ^15.0.0
@@ -15,8 +16,11 @@ specifiers:
   eslint-plugin-import: ^2.27.5
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-vue: ^9.11.0
+  js-cookie: ^3.0.5
+  lodash: ^4.17.21
   mockjs: ^1.1.0
   pinia: ^2.0.36
+  pinia-plugin-persistedstate: ^3.1.0
   prettier: ^2.8.8
   rollup-plugin-visualizer: ^5.9.0
   sass: ^1.62.1
@@ -33,9 +37,13 @@ specifiers:
 
 dependencies:
   '@vueuse/core': registry.npmmirror.com/@vueuse/core/10.1.2_vue@3.3.2
+  crypto-js: registry.npmmirror.com/crypto-js/4.1.1
   element-plus: registry.npmmirror.com/element-plus/2.3.4_vue@3.3.2
+  js-cookie: registry.npmmirror.com/js-cookie/3.0.5
+  lodash: registry.npmmirror.com/lodash/4.17.21
   mockjs: registry.npmmirror.com/mockjs/1.1.0
   pinia: registry.npmmirror.com/pinia/2.0.36_vue@3.3.2
+  pinia-plugin-persistedstate: registry.npmmirror.com/pinia-plugin-persistedstate/3.1.0_pinia@2.0.36
   vue: registry.npmmirror.com/vue/3.3.2
   vue-router: registry.npmmirror.com/vue-router/4.2.0_vue@3.3.2
 
@@ -1597,6 +1605,12 @@ packages:
       which: registry.npmmirror.com/which/2.0.2
     dev: true
 
+  registry.npmmirror.com/crypto-js/4.1.1:
+    resolution: {integrity: sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/crypto-js/-/crypto-js-4.1.1.tgz}
+    name: crypto-js
+    version: 4.1.1
+    dev: false
+
   registry.npmmirror.com/cssesc/3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cssesc/-/cssesc-3.0.0.tgz}
     name: cssesc
@@ -2773,6 +2787,13 @@ packages:
     hasBin: true
     dev: true
 
+  registry.npmmirror.com/js-cookie/3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/js-cookie/-/js-cookie-3.0.5.tgz}
+    name: js-cookie
+    version: 3.0.5
+    engines: {node: '>=14'}
+    dev: false
+
   registry.npmmirror.com/js-sdsl/4.4.0:
     resolution: {integrity: sha512-FfVSdx6pJ41Oa+CF7RDaFmTnCaFhua+SNYQX74riGOpl96x+2jQCqEfQ2bnXu/5DPCqlRuiqyvTJM0Qjz26IVg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/js-sdsl/-/js-sdsl-4.4.0.tgz}
     name: js-sdsl
@@ -3263,6 +3284,17 @@ packages:
     version: 2.3.1
     engines: {node: '>=8.6'}
     dev: true
+
+  registry.npmmirror.com/pinia-plugin-persistedstate/3.1.0_pinia@2.0.36:
+    resolution: {integrity: sha512-8UN+vYMEPBdgNLwceY08mi5olI0wkYaEb8b6hD6xW7SnBRuPydWHlEhZvUWgNb/ibuf4PvufpvtS+dmhYjJQOw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pinia-plugin-persistedstate/-/pinia-plugin-persistedstate-3.1.0.tgz}
+    id: registry.npmmirror.com/pinia-plugin-persistedstate/3.1.0
+    name: pinia-plugin-persistedstate
+    version: 3.1.0
+    peerDependencies:
+      pinia: ^2.0.0
+    dependencies:
+      pinia: registry.npmmirror.com/pinia/2.0.36_vue@3.3.2
+    dev: false
 
   registry.npmmirror.com/pinia/2.0.36_vue@3.3.2:
     resolution: {integrity: sha512-4UKApwjlmJH+VuHKgA+zQMddcCb3ezYnyewQ9NVrsDqZ/j9dMv5+rh+1r48whKNdpFkZAWVxhBp5ewYaYX9JcQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pinia/-/pinia-2.0.36.tgz}

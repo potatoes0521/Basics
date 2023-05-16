@@ -2,8 +2,8 @@
  * @LastEditors: liu yang
  * @Description: WindiCSS 配置
  * @Date: 2022-03-08 14:56:36
- * @LastEditTime: 2023-05-15 14:50:23
- * @Author: isboyjc
+ * @LastEditTime: 2023-05-16 09:43:16
+ * @Author: liu yang
  */
 // 英文文档：https://windicss.org
 // 中文文档：https://cn.windicss.org

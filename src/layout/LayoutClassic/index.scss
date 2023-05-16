@@ -1,0 +1,51 @@
+.el-container {
+  width: 100%;
+  height: 100%;
+  .el-header {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0;
+    background-color: var(--xx-sidebar-bg-color);
+    border-bottom: 1px solid var(--xx-sidebar-bg-color);
+    .header-lf {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      white-space: nowrap;
+      :deep(.logo-wrapper) {
+        padding-left: 15px;
+      }
+    }
+    :deep(.tool-bar-lf) {
+      color: #ffffff;
+    }
+    :deep(.tool-bar-ri) {
+      .fullscreen,
+      .notify,
+      .theme-setting,
+      .userinfo-name {
+        color: #fff !important;
+      }
+    }
+  }
+  .el-aside {
+    width: auto;
+    overflow: inherit;
+    background-color: var(--xx-sidebar-bg-color);
+    border-right: 1px solid var(--xx-sidebar-bg-color);
+    transition: all 0.3s ease;
+    .menu {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      transition: all 0.3s ease;
+      .el-menu {
+        overflow-x: hidden;
+        border-right: none;
+      }
+    }
+  }
+}

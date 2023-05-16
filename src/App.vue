@@ -6,19 +6,19 @@
 
 <script setup>
   import { computed } from 'vue';
-  // import { useSystemStore } from '@/store/system'
+  import { useSystemStore } from '@/store/system';
   import { ElConfigProvider } from 'element-plus';
   import zhCn from 'element-plus/es/locale/lang/zh-cn';
-  // import { useTheme } from '@/hooks/useTheme';
+  import { useTheme } from '@/hooks/useTheme';
 
-  // const { initTheme } = useTheme();
-  // initTheme();
+  const { initTheme } = useTheme();
+  initTheme();
 
-  // const globalStore = useSystemStore();
+  const globalStore = useSystemStore();
 
   const locale = computed(() => zhCn);
 
-  // const assemblySize = computed(() => globalStore.assemblySize);
+  const assemblySize = computed(() => globalStore.assemblySize);
 </script>
 
 <style lang="scss">
