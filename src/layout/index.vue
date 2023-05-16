@@ -11,7 +11,7 @@
   import LayoutClassic from './LayoutClassic/index.vue';
   import LayoutTransverse from './LayoutTransverse/index.vue';
   import LayoutColumns from './LayoutColumns/index.vue';
-  import { useSystemStore } from '@/store/system';
+  import { useSystemStore } from '@/stores/system';
 
   const LayoutComponents = {
     vertical: LayoutVertical,

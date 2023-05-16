@@ -15,8 +15,8 @@
 <script setup>
   import { ref, computed, onBeforeUnmount, provide, watch } from 'vue';
   import { useDebounceFn } from '@vueuse/core';
-  import { useSystemStore } from '@/store/system';
-  import { useKeepAliveStore } from '@/store/keepAlive';
+  import { useSystemStore } from '@/stores/system';
+  import { useKeepAliveStore } from '@/stores/keepAlive';
   import Maximize from './components/Maximize.vue';
   import Tabs from '@/layout/components/Tabs/index.vue';
 

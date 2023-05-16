@@ -35,7 +35,7 @@
   import Main from '@/layout/components/Main/index.vue';
   import ToolBarRight from '@/layout/components/Header/ToolBarRight.vue';
   import SubMenu from '@/layout/components/Menu/SubMenu.vue';
-  import { useUserStore } from '@/store/user';
+  import { useUserStore } from '@/stores/user';
 
   const userStore = useUserStore();
 

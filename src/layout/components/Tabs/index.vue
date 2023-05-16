@@ -15,8 +15,8 @@
   import Sortable from 'sortablejs';
   import { ref, computed, watch, onMounted } from 'vue';
   import { useRoute, useRouter } from 'vue-router';
-  import { TabsStore } from '@/store/tabs';
-  import { useKeepAliveStore } from '@/store/keepAlive';
+  import { TabsStore } from '@/stores/tabs';
+  import { useKeepAliveStore } from '@/stores/keepAlive';
   import MoreButton from './components/MoreButton.vue';
 
   const route = useRoute();

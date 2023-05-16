@@ -102,7 +102,7 @@
 <script setup>
   import { ref, computed, watch } from 'vue';
   import { useTheme } from '@/hooks/useTheme';
-  import { useSystemStore } from '@/store/system';
+  import { useSystemStore } from '@/stores/system';
   // import SwitchDark from '@/components/SwitchDark/index.vue';
   import { getConfig } from '@/config';
   import mittBus from '@/utils/mittBus';

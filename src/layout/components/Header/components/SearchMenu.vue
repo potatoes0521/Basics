@@ -30,7 +30,7 @@
   import { ref, computed, nextTick } from 'vue';
   import { Search } from '@element-plus/icons-vue';
   import { useRouter } from 'vue-router';
-  import { AuthStore } from '@/store/modules/auth';
+  import { AuthStore } from '@/stores/modules/auth';
 
   const router = useRouter();
   const authStore = AuthStore();

@@ -30,8 +30,8 @@
 <script setup>
   import { computed } from 'vue';
   import { useRoute } from 'vue-router';
-  import { useSystemStore } from '@/store/system';
-  import { useUserStore } from '@/store/user';
+  import { useSystemStore } from '@/stores/system';
+  import { useUserStore } from '@/stores/user';
   import Main from '@/layout/components/Main/index.vue';
   import ToolBarLeft from '@/layout/components/Header/ToolBarLeft.vue';
   import ToolBarRight from '@/layout/components/Header/ToolBarRight.vue';

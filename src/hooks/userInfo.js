@@ -9,7 +9,7 @@ import storage from '@/utils/storage';
 import { ref } from 'vue';
 import { useRoute } from 'vue-router';
 import { getConfig } from '@/config';
-import { useUserStore } from '@/store/user';
+import { useUserStore } from '@/stores/user';
 
 export default function useUserInfo() {
   const route = useRoute();

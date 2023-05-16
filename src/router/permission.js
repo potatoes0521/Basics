@@ -8,7 +8,7 @@
 import router from './index';
 import getPageTitle from '@/utils/get-page-title';
 import { getCookie } from '@/utils/storage';
-import { useUserStore } from '@/store/user';
+import { useUserStore } from '@/stores/user';
 import { checkHeartBeat } from '@/utils/cas';
 import { whiteList } from './defaultRouter';
 

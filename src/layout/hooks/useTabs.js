@@ -6,7 +6,7 @@
  * @Author: liu yang
  */
 import { isElementInViewport } from '@/utils/index';
-import { useCachesTabsStore } from '@/store/tabs';
+import { useCachesTabsStore } from '@/stores/tabs';
 import { TransitionPresets } from '@vueuse/core';
 import router from '@/router';
 import { useRoute } from 'vue-router';

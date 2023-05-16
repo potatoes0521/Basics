@@ -7,7 +7,7 @@
 
 <script setup>
   import { computed } from 'vue';
-  import { useSystemStore } from '@/store/system';
+  import { useSystemStore } from '@/stores/system';
 
   const systemStore = useSystemStore();
   const themeConfig = computed(() => systemStore.themeConfig);

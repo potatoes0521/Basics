@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-  import { useSystemStore } from '@/store/system';
+  import { useSystemStore } from '@/stores/system';
 
   import CollapseIcon from './components/CollapseIcon.vue';
 

@@ -47,7 +47,7 @@
   import ToolBarLeft from '@/layout/components/Header/ToolBarLeft.vue';
   import ToolBarRight from '@/layout/components/Header/ToolBarRight.vue';
   import SubMenu from '@/layout/components/Menu/SubMenu.vue';
-  import { useUserStore } from '@/store/user';
+  import { useUserStore } from '@/stores/user';
   import { treeToList, findOnePathById } from '@/utils/treeTool';
   import { getConfig } from '@/config/index.js';
 

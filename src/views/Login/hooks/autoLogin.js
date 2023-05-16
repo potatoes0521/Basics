@@ -8,7 +8,7 @@
 // import storage from '@/utils/storage'
 // import { createUniqueCode } from '@/utils/uniqueCode'
 import { getConfig } from '@/config';
-import { useUserStore } from '@/store/user';
+import { useUserStore } from '@/stores/user';
 import { checkHeartBeat } from '@/utils/cas';
 // import { ticketLogin } from '@/api/modules/sso'
 import { getQueryObject } from '@/utils/url';

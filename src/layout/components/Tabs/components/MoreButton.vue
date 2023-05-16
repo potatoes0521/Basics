@@ -27,8 +27,8 @@
 <script setup>
   import { inject, nextTick } from 'vue';
   // import { HOME_URL } from '@/config/config';
-  import { TabsStore } from '@/store/tabs';
-  import { useKeepAliveStore } from '@/store/keepAlive';
+  import { TabsStore } from '@/stores/tabs';
+  import { useKeepAliveStore } from '@/stores/keepAlive';
   import { useRoute } from 'vue-router';
 
   const route = useRoute();

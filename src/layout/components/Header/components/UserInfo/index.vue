@@ -28,7 +28,7 @@
 
 <script setup>
   import ChangePassword from './components/ChangePassword/index.vue';
-  import { useUserStore } from '@/store/user';
+  import { useUserStore } from '@/stores/user';
   import { loginOut } from '@/api/modules/this';
   import { getAllNameCookie } from '@/utils/storage';
 

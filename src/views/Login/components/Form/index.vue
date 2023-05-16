@@ -29,7 +29,7 @@
   import { formValidateIsCodeNumberLine } from '@/utils/patter';
   import { login } from '@/api/modules/sso';
   import { setCookie } from '@/utils/storage';
-  import { useUserStore } from '@/store/user';
+  import { useUserStore } from '@/stores/user';
   import { desEncrypt } from '@/utils/jsencrypt';
   import { ElMessage } from 'element-plus';
 

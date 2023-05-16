@@ -7,7 +7,7 @@
  */
 import { computed } from 'vue';
 import { getLightColor, getDarkColor } from '@/utils/theme';
-import { useSystemStore } from '@/store/system';
+import { useSystemStore } from '@/stores/system';
 import { getConfig } from '@/config';
 
 import { ElMessage } from 'element-plus';

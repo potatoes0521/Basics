@@ -9,7 +9,7 @@ import axios from 'axios';
 import axiosRetry from 'axios-retry';
 import { ElMessage, ElMessageBox } from 'element-plus';
 import { getCookie, getLocal } from './storage';
-import { useUserStore } from '@/store/user';
+import { useUserStore } from '@/stores/user';
 import { messageContentRender } from './createdHtmlTemplate';
 import { isNullOrUnDef } from './typeOf';
 

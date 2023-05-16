@@ -29,7 +29,7 @@ import { PermissionRouter } from './modules/asyncRouter.js';
 import { hideInMenuRouter } from './modules/hideInMenuRouter.js';
 import { setSession } from '@/utils/storage.js';
 import { handleStorageSyncServe } from '@/utils/array';
-import { useUserStore } from '@/store/user.js';
+import { useUserStore } from '@/stores/user.js';
 import { ElNotification } from 'element-plus';
 
 export const handleMenuData = async (to) => {

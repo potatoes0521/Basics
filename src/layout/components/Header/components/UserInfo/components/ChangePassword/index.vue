@@ -28,7 +28,7 @@
   import { formValidateIsCodeNumberLine, formValidateIsStrongPassword } from '@/utils/patter';
   import { changePassword } from '@/api/modules/session';
   import { messageContentRender } from '@/utils/createdHtmlTemplate';
-  import { useUserStore } from '@/store/user';
+  import { useUserStore } from '@/stores/user';
   import { desEncrypt } from '@/utils/jsencrypt';
   import { ElMessage, ElMessageBox } from 'element-plus';
 
