@@ -2,7 +2,7 @@
  * @LastEditors: liu yang
  * @Description: Vite 插件配置
  * @Date: 2023-05-15 14:43:00
- * @LastEditTime: 2023-05-15 16:41:11
+ * @LastEditTime: 2023-05-16 10:35:30
  * @Author: liu yang
  */
 import vue from '@vitejs/plugin-vue';
@@ -49,7 +49,7 @@ export default ({ mode }) => {
         /\.vue\?vue/, // .vue
         /\.md$/ // .md
       ],
-      imports: ['vue', 'pinia', 'vue-router', 'vue-i18n', '@vueuse/core'],
+      imports: ['vue', 'pinia', 'vue-router', '@vueuse/core'],
       // 生成相应的自动导入json文件。
       // eslint globals Docs - https://eslint.org/docs/user-guide/configuring/language-options#specifying-globals
       eslintrc: {

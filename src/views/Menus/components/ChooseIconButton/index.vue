@@ -3,8 +3,8 @@
  * @Description: 请填写描述信息
  * @Path: 引入路径
  * @Date: 2021-03-24 13:37:01
- * @LastEditors: NiuNiu
- * @LastEditTime: 2022-12-13 10:47:54
+ * @LastEditors: liu yang
+ * @LastEditTime: 2023-05-16 10:40:50
  * @MustParam: 必传参数
  * @OptionalParam: 选传参数
  * @EmitFunction: 函数
@@ -35,7 +35,7 @@
 <script></script>
 
 <script setup>
-  import Icon from '@/components/Icons/index.vue';
+  // import Icon from '@/components/Icons/index.vue';
 
   defineProps({
     iconName: {

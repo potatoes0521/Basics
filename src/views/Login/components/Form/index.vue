@@ -26,12 +26,12 @@
 <script setup>
   import useCaptcha from './hooks/captcha';
   import { createUniqueCode } from '@/utils/uniqueCode';
+  import { User, Lock } from '@element-plus/icons-vue';
   import { formValidateIsCodeNumberLine } from '@/utils/patter';
   import { login } from '@/api/modules/sso';
   import { setCookie } from '@/utils/storage';
   import { useUserStore } from '@/stores/user';
   import { desEncrypt } from '@/utils/jsencrypt';
-  import { ElMessage } from 'element-plus';
 
   const formRef = ref(null);
 
@@ -124,7 +124,7 @@
 </script>
 <style scoped lang="scss">
   .form-title {
-    @apply font-600 text-[#fff] text-40px leading-56px text-center;
+    @apply flex font-600 text-[#fff] text-40px leading-56px items-center;
   }
 
   .login-form {

@@ -1,8 +1,8 @@
 /*
- * @LastEditors: isboyjc
+ * @LastEditors: liu yang
  * @Description: 如果有rmT等于有 记住密码的ticket 直接登录
  * @Date: 2021-11-27 13:54:52
- * @LastEditTime: 2023-01-11 15:31:45
+ * @LastEditTime: 2023-05-16 10:47:52
  * @Author: liu yang
  */
 // import storage from '@/utils/storage'
