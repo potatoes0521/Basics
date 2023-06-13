@@ -2,7 +2,7 @@
  * @LastEditors: liu yang
  * @Description: ...
  * @Date: 2023-05-15 14:21:20
- * @LastEditTime: 2023-05-16 09:22:16
+ * @LastEditTime: 2023-06-13 16:24:28
  * @Author: liu yang
  */
 import { fileURLToPath, URL } from 'node:url';
@@ -15,6 +15,8 @@ export default defineConfig((env) => {
   const viteEnv = loadEnv(env.mode, `./env`);
   console.log('🚀 > file: vite.config.js > line 19 > defineConfig >', env);
   console.log('🚀 > file: vite.config.js > line 19 > defineConfig > viteEnv', viteEnv);
+  console.log(viteEnv.VITE_BASE_URL);
+  console.log(viteEnv.VITE_BASE_SERVER_URL);
 
   return {
     base: viteEnv.VITE_BASE,
@@ -28,10 +30,12 @@ export default defineConfig((env) => {
       proxy: {
         // https://cn.vitejs.dev/config/#server-proxy
         [viteEnv.VITE_BASE_URL]: {
-          // 本地 8000 前端代码的接口 代理到 8888 的服务端口
           target: viteEnv.VITE_BASE_SERVER_URL,
           changeOrigin: true, // 允许跨域
-          rewrite: (path) => path.replace(viteEnv.VITE_BASE_URL, '/')
+          rewrite: (path) => {
+            console.log('🚀 > file: vite.config.js:37 > defineConfig > path:', path);
+            return path.replace(viteEnv.VITE_BASE_URL, '/');
+          }
         }
       }
     },
@@ -60,6 +64,7 @@ export default defineConfig((env) => {
       }
     },
     plugins: [...presets(env)],
+    envDir: './env',
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url))
